@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=JetBrains+Mono:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 13,17,23;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 13,17,23;
+    --background-start-rgb: 13,17,23;
+    --background-end-rgb: 13,17,23;
   }
 }
 
@@ -25,3 +27,118 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: "Valencia";
+  src: url("/fonts/Valencia.ttf");
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.Typewriter__wrapper {
+  /* font-size: 2.2em !important; */
+  color: #9cf5fd !important;
+  /* font-weight: 600 !important; */
+}
+
+.Typewriter__cursor {
+  /* font-size: 2.4em !important; */
+  color: #ff5f9e !important;
+}
+
+.TypeScript{
+background-color: #3178c6;
+}
+.JavaScript{
+background-color: #f1e05a;
+}
+.Html{
+background-color: #e34c26;
+}
+.Java{
+background-color: #b07219;
+}
+
+
+.btn{
+  @apply shadow-[rgba(0,0,0,0.02)_0px_1px_3px_0px,rgba(27,31,35,0.15)_0px_0px_0px_1px] flex justify-center items-center relative;
+  button: #00c8aa;
+}
+
+.top-btn {
+  @apply text-[2.4rem] w-[3.75rem] h-[3.75rem] text-white fixed z-[999] flex justify-center items-center cursor-pointer rounded-[50%] right-8 bottom-6;
+  /* // background - color: ${ ({ theme }) => theme.colors.btn };
+  // box - shadow: ${ ({ theme }) => theme.colors.shadow }; */
+}
+
+.top-btn--icon {
+    @apply h-5;
+}
+
+icon {
+    @apply animate-[gototop_1.2s_linear_infinite_alternate-reverse];
+}
+
+@keyframes gototop {
+  0%{
+    transform: translateY(-0.5rem);
+  }
+
+  100%{
+    transform: translateY(0.5rem);
+  }
+}
+
+
+ .mobile {
+  right: 0;
+  left: 40%;
+
+}
+
