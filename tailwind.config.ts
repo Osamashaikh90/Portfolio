@@ -13,7 +13,9 @@ const config: Config = {
         'typewriter': ['JetBrains Mono'],
         'name':['Valencia'],
         'tags':['Caveat'],
-        'sign':['Taprom']
+        'sign':['Taprom'],
+        'lora':['Lora'],
+        'Croissant':['Croissant One']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
