@@ -11,7 +11,9 @@ const config: Config = {
       fontFamily: {
         'background': ['Montserrat'],
         'typewriter': ['JetBrains Mono'],
-        'name':['Valencia']
+        'name':['Valencia'],
+        'tags':['Caveat'],
+        'sign':['Taprom']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
