@@ -42,7 +42,7 @@ const Hero = () => {
 <a href="https://twitter.com/Osamash03705044"><img src="https://img.shields.io/badge/Twitter-0099ff?style=for-the-badge&logo=twitter&logoColor=white"/></a> 
 <a href="mailto:shaikhosama499@gmail.com"><img src="https://img.shields.io/badge/mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
           </p>
-          <h3 className='font-sans'>Copyright © {year} OS.</h3>
+          <h3 className='font-sign'>© {year} <span className='font-sign'>Osama Shaikh</span></h3>
           </div> 
           </div>
         </div></div>
