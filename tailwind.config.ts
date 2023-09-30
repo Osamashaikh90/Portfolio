@@ -15,13 +15,28 @@ const config: Config = {
         'tags':['Caveat'],
         'sign':['Taprom'],
         'lora':['Lora'],
-        'Croissant':['Croissant One']
+        'Croissant': ['Croissant One'],
+        'headings':['Eczar']
       },
       backgroundImage: {
+        'contact': "url('/images/glow3.png')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+      xxsm: '350px',
+      xsm: '425px',
+      mobile: '426px',
+      sm: '640px',
+      tablet: '640px',
+      md: '768px',
+      lg: '1024px',
+      laptop: '1024px',
+      xl: '1440px',
+      desktop: '1280px',
+      '2xl': '1536px',
+    },
     },
   },
   plugins: [],
