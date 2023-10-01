@@ -25,6 +25,10 @@
   }
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -34,6 +38,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
 
 @font-face {
   font-family: "Valencia";
@@ -190,4 +195,3 @@ icon {
   grid-row: 5;
   grid-column: 1;
 } */
-
