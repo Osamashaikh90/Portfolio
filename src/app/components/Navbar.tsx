@@ -53,7 +53,7 @@ const Navbar = () => {
                                  onClick={(e)=> setDisabled(!isDisabled)}
                                     disabled={isDisabled}
                                 type="search" name="search" id="" className='w-0 mobile:w-[90%] bg-inherit border-0 !outline-none text-base font-extralight disabled ' placeholder='Type here to search' /><span className='text-[#454b55] text-base hidden mobile:block'>|</span><span className='hidden mobile:block'><GoCommandPalette/></span></div>
-                        <span className='text-[#454b55] text-xl hidden mobile:block'>|</span>
+                        <span className='text-[#454b55] text-3xl hidden mobile:block'>|</span>
                         <span className='hidden mobile:block'><span className='text-[#7d8590] text-xl border border-[#363a40] rounded-md p-[6px] flex gap-1 hover:border-[#6c717b] active:border-[#363a40] hover:bg-[#54575b62] cursor-pointer '><BiPlus /><TiArrowSortedDown /></span></span>
                         <span className='text-[#7d8590] text-2xl border border-[#363a40] rounded-md p-1 hover:border-[#6c717b] hover:bg-[#54575b62] cursor-pointer hidden mobile:block'><LiaDotCircle/></span>
                         <span className='text-[#7d8590] text-2xl border border-[#363a40] rounded-md p-1 hover:border-[#6c717b] hover:bg-[#54575b62] cursor-pointer hidden mobile:block'><BiGitPullRequest/></span>
