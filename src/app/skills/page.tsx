@@ -5,10 +5,8 @@ import { IconsTypes, iconsData, tools } from "../utils/icons"
 import ContactForm from '../components/ContactForm';
 import SocialLinks from '../components/SocialLinks';
 import GoToTop from '../components/GoToTop';
-interface IconsProps {
-  icons:IconsTypes ;
-}
-const Skills: React.FC<IconsProps> = () => {
+
+const Skills = () => {
   //  useEffect(() => {
   //   // Scroll to the section with the matching ID when the page loads
   //   const section = document.querySelector('#contactId');
