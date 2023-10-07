@@ -16,6 +16,10 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, closeSidebar }) => {
   let date = new Date();
   let year = date.getFullYear();
   return (
+  <>
+     {isOpen && (
+                <div className="fixed inset-0 bg-[#b1bac4] bg-opacity-25 z-10"></div>
+            )}
     <div className={`flex flex-col gap-5 border-[1px]  border-[#21262D] z-10  mobile:w-[22%] shadow-black shadow-xl rounded-tr-2xl rounded-br-2xl fixed top-0 left-0 h-screen bg-[#161b22] ${isOpen ? 'translate-x-0 duration-300' : '-translate-x-full duration-150'}`}>
       <div className="logo left text-lg mt-[15px] ml-4 flex gap-[18px] justify-between items-center">
                        <Link href="/"> <Image
@@ -24,15 +28,15 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, closeSidebar }) => {
                             width={35}
                             height={35}
           alt="Github logo" /></Link>
-        <span className=' rounded-lg text-[#7d8590] font-bold hover:bg-[#30363D] hover:duration-300 text-xl cursor-pointer mr-[18px] mt-[2px] p-2' onClick={closeSidebar}><GoX/></span>
+        <span className=' rounded-lg text-[#7d8590] font-bold hover:bg-[#30363D] hover:duration-300 text-xl cursor-pointer mr-[18px] mt-[2px] p-2'  onClick={closeSidebar}><GoX/></span>
       </div>
       <div className="pages mx-3 overflow-y-auto">
         <ul className='flex flex-col gap-1 justify-between mr-4 '>
-                        <Link href="/"><li className='flex gap-2 items-center overflow-y-auto  hover:bg-[#30363D] hover:rounded-lg p-2'><span className='text-lg text-[#7d8590] font-semibold'><GoBook className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Overview</span></li></Link>
-                   <Link href="/projects"><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2'><span className='text-lg text-[#7d8590] font-semibold'><GoRepo className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Projects</span> <span className=' rounded-xl px-2 py-[1px] font-sans text-[#e6edf3] bg-[#30363d] text-xs font-bold'><ProjectCounter /></span></li></Link>
-                    <Link className='\' href="/skills"><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2'><span className='text-lg text-[#7d8590] font-semibold'><GoTable className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Skills</span></li></Link>
-                    <Link className='' href="/about"><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2'><span className='text-lg text-[#7d8590] font-semibold'><GoStar className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>About</span></li></Link>
-                       <a className='' href="https://dev-diaries-kappa.vercel.app/"><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2'><span className='text-lg text-[#7d8590] font-semibold'><GoPackage className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Blogs</span></li></a> 
+                        <Link href="/"><li className='flex gap-2 items-center overflow-y-auto  hover:bg-[#30363D] hover:rounded-lg p-2' onClick={closeSidebar}><span className='text-lg text-[#7d8590] font-semibold' ><GoBook className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Overview</span></li></Link>
+                   <Link href="/projects"><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2' onClick={closeSidebar}><span className='text-lg text-[#7d8590] font-semibold'><GoRepo className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Projects</span> <span className=' rounded-xl px-2 py-[1px] font-sans text-[#e6edf3] bg-[#30363d] text-xs font-bold'><ProjectCounter /></span></li></Link>
+                    <Link className='\' href="/skills"><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2' onClick={closeSidebar}><span className='text-lg text-[#7d8590] font-semibold'><GoTable className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Skills</span></li></Link>
+                    <Link className='' href="/about"><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2' onClick={closeSidebar}><span className='text-lg text-[#7d8590] font-semibold'><GoStar className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>About</span></li></Link>
+                       <a className='' href="https://dev-diaries-kappa.vercel.app/"><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2' onClick={closeSidebar}><span className='text-lg text-[#7d8590] font-semibold'><GoPackage className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Blogs</span></li></a> 
                  
         </ul>
       </div>
@@ -56,7 +60,8 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, closeSidebar }) => {
 </div>
 
 
-    </div>
+      </div>
+      </>
   )
 }
 

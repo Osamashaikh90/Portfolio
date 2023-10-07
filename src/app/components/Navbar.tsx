@@ -1,5 +1,6 @@
 "use client";
-import React,{  useState } from 'react'
+import React, { useState} from 'react'
+import { usePathname } from 'next/navigation';
 import { AiOutlineMenu,AiFillStar } from "react-icons/ai"
 import { FiSearch,FiInbox } from "react-icons/fi"
 import { BiPlus,BiGitPullRequest } from "react-icons/bi"
@@ -8,26 +9,34 @@ import { TiArrowSortedDown } from "react-icons/ti"
 import { LiaDotCircle } from "react-icons/lia"
 import { GoBook,GoRepo,GoTable,GoPackage,GoStar,GoCommandPalette } from "react-icons/go"
 import {CgGitFork} from "react-icons/cg"
-import {IoIosArrowForward} from "react-icons/io"
 import Image from 'next/image';
 import Link from 'next/link';
 import ProjectCounter from './ProjectCounter';
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import SideBar from './SideBar';
 const Navbar = () => {
+    const pathname = usePathname() as any;
     const [isDisabled, setDisabled] = useState(false);
     const [isVisible, setVisible] = useState(false);
       const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const showSidebar = () => setSidebarOpen(!isSidebarOpen);
+    //   const showSidebar = () => setSidebarOpen(!isSidebarOpen);
     const showMenu = () => setVisible(!isVisible);
-//inside render
+    const sideDrawerClosedHandler = () => {
+        setSidebarOpen(false);
+        document.body.style.overflow = 'unset';
+    }
+    const showSidebar = () => {
+        setSidebarOpen(true);
+        document.body.style.overflow = 'hidden';
+    }
+
     return (
       <>
             <div className='h-[108px] flex  items-center justify-center flex-col border-y border-[#21262D] text-[#e6edf3] bg-[#010409]'>
                 <div className='p-3 flex items-center justify-between w-full '>
                     <div className="left text-lg mt-[7px] ml-[7px] flex gap-[18px] justify-between items-center">
                         <button onClick={showSidebar} className='border border-[#2b2e33] p-2 rounded-md hover:border-[#6c717b] '>< AiOutlineMenu className=" text-[#7d8590] font-extrabold" /></button>
-                        <SideBar isOpen={isSidebarOpen} closeSidebar={showSidebar} />
+                        <SideBar isOpen={isSidebarOpen} closeSidebar={sideDrawerClosedHandler} />
                        <Link href="/"> <Image
                             className='rounded-full '
                             src="/images/OSlogo.jpg"
@@ -61,11 +70,11 @@ const Navbar = () => {
                 </div>
                 {/* ----------------------------------2nd nav------------------------------------------------------------ */}
                 <div className='p-2 flex justify-between items-center w-full relative'>
-                    <ul className='flex gap-5 justify-between mx-4'>
-                        <Link href="/"><li className='flex gap-2 items-center hover:bg-[#21262d8f] hover:rounded-lg p-1'><span className='text-lg text-[#7d8590] font-semibold'><GoBook className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Overview</span></li></Link>
-                   <Link href="/projects"><li className='flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-lg p-1'><span className='text-lg text-[#7d8590] font-semibold'><GoRepo className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Projects</span> <span className=' rounded-xl px-2 py-[1px] font-sans text-[#e6edf3] bg-[#30363d] text-xs font-bold'><ProjectCounter /></span></li></Link>
-                    <Link className='\' href="/skills"><li className='flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-lg p-1'><span className='text-lg text-[#7d8590] font-semibold'><GoTable className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Skills</span></li></Link>
-                    <Link className='hidden mobile:block' href="/about"><li className='flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-lg p-1'><span className='text-lg text-[#7d8590] font-semibold'><GoStar className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>About</span></li></Link>
+                    <ul className='flex gap-5 justify-between mx-4 '>
+                        <Link href="/"><li className={`flex gap-2 items-center hover:bg-[#21262d8f] active:bg-[#21262d8f]  hover:rounded-lg p-1 relative `}><span className={`text-lg text-[#7d8590] font-semibold ${pathname === '/' ? 'after:content-[""] after:absolute after:h-[2px] after:w-full after:bg-[#F78166] after:left-0 after:top-full after:rounded-lg after:block' : ''}`}><GoBook className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Overview</span></li></Link>
+                        <Link href="/projects"><li className={`flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-lg p-1 relative`}><span className={`text-lg text-[#7d8590] font-semibold ${pathname === '/projects' ? 'after:content-[""] after:absolute after:h-[2px] after:w-full after:bg-[#F78166] after:left-0 after:top-full after:rounded-lg after:block' : ''}`}><GoRepo className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Projects</span> <span className=' rounded-xl px-2 py-[1px] font-sans text-[#e6edf3] bg-[#30363d] text-xs font-bold'><ProjectCounter /></span></li></Link>
+                    <Link className='\' href="/skills"><li className='flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-lg p-1 relative'><span className={`text-lg text-[#7d8590] font-semibold ${pathname === '/skills' ? 'after:content-[""] after:absolute after:h-[2px] after:w-full after:bg-[#F78166] after:left-0 after:top-full after:rounded-lg after:block' : ''}`}><GoTable className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Skills</span></li></Link>
+                    <Link className='hidden mobile:block' href="/about"><li className='flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-lg p-1 relative'><span className={`text-lg text-[#7d8590] font-semibold ${pathname === '/about' ? 'after:content-[""] after:absolute after:h-[2px] after:w-full after:bg-[#F78166] after:left-0 after:top-full after:rounded-lg after:block' : ''}`}><GoStar className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>About</span></li></Link>
                        <a className='hidden mobile:block' href="https://dev-diaries-kappa.vercel.app/"><li className='flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-lg p-1'><span className='text-lg text-[#7d8590] font-semibold'><GoPackage className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Blogs</span></li></a> 
                     <a href="https://github.com/Osamashaikh90"
                             target='_blank'
@@ -75,6 +84,7 @@ const Navbar = () => {
                 <CgGitFork />{" "}<AiFillStar />
                         </button></a>
                     </ul>
+                    
                     <div className='mobile:hidden text-xl   relative text-[#7d8590] mr-2 flex items-center  rounded-[3px]'>
                         <span onClick={showMenu}><BsThreeDots /></span>
                         <div className={`remCard absolute  ml-[-400%]  flex flex-col text-[#e6edf3] bg-[#161B21] border-[#31363C] border shadow-md shadow-black text-sm z-10  mt-[106px] w-28 rounded ${isVisible? 'block' : 'hidden'}`}>
@@ -83,6 +93,7 @@ const Navbar = () => {
                                 <span className='w-full'><Link href="https://dev-diaries-kappa.vercel.app/" className=''>Blogs</Link></span>
                             </div>
                         </div> 
+                       
                 </div>
                 </div>
             </div>
@@ -98,4 +109,5 @@ const Navbar = () => {
 
 export default Navbar
 //  shadow-[#303030c0_0px_1px_2px_0px,#adadad65_0px_1px_3px_1px]
-{/* <span className='text-[#454b55] flex gap-0 text-base items-center justify-center font-semibold '><IoIosArrowForward />_</span> */}
+
+
