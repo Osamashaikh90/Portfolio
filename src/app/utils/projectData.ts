@@ -18,7 +18,7 @@ export const projectData: Array<ProjectDataTypes> = [
 "tags": ["reactjs", "nodejs", "mongodb", "styled-components", "expressjs","react-ecommerce"],
 "source_code": "https://github.com/Osamashaikh90/QuickClick",
 "live_link": "quick-click.vercel.app",
-"language":"JavaScript ",
+"language":"JavaScript",
 "visibility":"Public"
 
 },
@@ -41,7 +41,7 @@ export const projectData: Array<ProjectDataTypes> = [
     "tags": ["nextjs", "TypeScript", "tailwind", "gray-matter", "blogs"],
     "source_code": "https://github.com/Osamashaikh90/DevDiaries",
 "live_link": "https://dev-diaries-kappa.vercel.app/",
-"language":"TypeScript ",
+"language":"TypeScript",
 "visibility":"Public"
 },
 {
@@ -75,7 +75,7 @@ export const projectData: Array<ProjectDataTypes> = [
     "source_code": "https://github.com/Osamashaikh90/Blood-bank_Management_Sysytem",
 "live_link": "https://github.com/Osamashaikh90/Blood-bank_Management_Sysytem",
 "language":"Java",
-"visibility":"Public"
+"visibility":"Private"
 }
 ]
 
