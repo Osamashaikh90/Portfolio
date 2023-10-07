@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import {GoChevronUp} from "react-icons/go"
 const GoToTop = () => {
      const [isVisible, setIsVisible] = useState(false);
 
@@ -25,10 +26,10 @@ const GoToTop = () => {
   }, []);
   return (
      <>
-        <div>
+        <div className="flex justify-center items-center relative ">
           {isVisible && (
-            <div className="top-btn w-16 h-16 text-white fixed flex justify-center items-center cursor-pointer" onClick={goToBtn}>
-              <FaArrowUp className="top-btn--icon" />
+            <div className="hover:animate-bounce  w-[2.5rem] h-[2.5rem]  z-[999] rounded-[50%] right-8 bottom-6 top-btn  text-[#555a62] bg-[#e6edf3] fixed flex justify-center items-center cursor-pointer shadow-xl shadow-[#5f6e8a]" onClick={goToBtn}>
+              <GoChevronUp className="top-btn--icon h-5 " />
             </div>
           )}
         </div>
