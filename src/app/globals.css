@@ -117,44 +117,11 @@ background-color: #e34c26;
 background-color: #b07219;
 }
 
-
-.btn{
-  @apply shadow-[rgba(0,0,0,0.02)_0px_1px_3px_0px,rgba(27,31,35,0.15)_0px_0px_0px_1px] flex justify-center items-center relative;
-  button: #00c8aa;
-}
-
-.top-btn {
-  @apply text-[2.4rem] w-[3.75rem] h-[3.75rem] text-white fixed z-[999] flex justify-center items-center cursor-pointer rounded-[50%] right-8 bottom-6;
-  /* // background - color: ${ ({ theme }) => theme.colors.btn };
-  // box - shadow: ${ ({ theme }) => theme.colors.shadow }; */
-}
-
-.top-btn--icon {
-    @apply h-5;
-}
-
-icon {
-    @apply animate-[gototop_1.2s_linear_infinite_alternate-reverse];
-}
-
-@keyframes gototop {
-  0%{
-    transform: translateY(-0.5rem);
-  }
-
-  100%{
-    transform: translateY(0.5rem);
-  }
-}
-
-
  .mobile {
   right: 0;
   left: 40%;
 
 }
-
-
 
 .grid-container {
   display: grid;
@@ -168,8 +135,6 @@ icon {
 .grid-item {
   margin-top:4px;
 }
-
-
 /* Define the grid placement for specific items */
 .grid-item:nth-child(1) {
   grid-row: 1;
@@ -185,15 +150,3 @@ icon {
   grid-row: 3;
   grid-column: 1;
 }
-
-/* .grid-item:nth-child(8) {
-  grid-row: 4;
-  grid-column: 2;
-}
-
-.grid-item:nth-child(9) {
-  grid-row: 5;
-  grid-column: 1;
-} */
-
-
