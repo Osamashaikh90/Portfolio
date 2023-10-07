@@ -62,7 +62,7 @@ const sortData = () => {
     <div className='text-white mx-5 mobile:mx-24 grid gap-5 grid-cols-1 mobile:grid-cols-8'>
       <HeroProfile />
       <div className='col-span-1 mobile:col-start-3 mobile:col-end-9 mt-6'>
-        <div className='flex gap-5 px-2 items-center flex-wrap mobile:flex-nowrap justify-start'>
+        <div className='flex gap-6 px-2 items-center flex-wrap mobile:flex-nowrap justify-start'>
                     <button className=' rounded-md bg-[#1f6feb] py-[5px] px-3 w-full mobile:hidden hover:bg-[#388BFD] text-[#e6edf3] font-medium hover:border-[#6c717b]  flex items-center justify-center gap-1'><GoRepo className="font-semibold" /> New</button>
           <input type="search" name="projects" id="" className='bg-inherit border border-[#363a40] w-full mobile:w-[55%] py-[6px] text-sm h-[34px] px-[10px] text-[#7d8590] rounded-md focus:ring-blue-600 outline-blue-600' placeholder='Find a project..' onChange={(e) => setSearch(e.target.value)}/>
             <div className='flex gap-1 mt-[-10px] mobile:mt-0'>
