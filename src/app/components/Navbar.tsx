@@ -39,7 +39,7 @@ const Navbar = () => {
                         <SideBar isOpen={isSidebarOpen} closeSidebar={sideDrawerClosedHandler} />
                        <Link href="/"> <Image
                             className='rounded-full '
-                            src="/images/OSlogo.jpg"
+                            src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/tqvyqes2x6pkcdvopgt9.jpg"
                             width={35}
                             height={35}
                             alt="Github logo"/></Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
                         <span className='text-[#7d8590] text-[26px]  rounded-[50%] border border-[#363a40]  hover:border-[#6c717b]'>
                             <Image
                             className='rounded-[50%]'
-                            src="/images/osama.png"
+                            src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/ctb3fojvz49l6ooatfgf.png"
                             width={35}
                             height={35}
                             alt="profile"/>

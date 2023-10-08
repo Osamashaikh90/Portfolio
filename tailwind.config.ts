@@ -16,7 +16,8 @@ const config: Config = {
         'sign':['Taprom'],
         'lora':['Lora'],
         'Croissant': ['Croissant One'],
-        'headings':['Eczar']
+        'headings': ['Eczar'],
+        'description':['Fira Code']
       },
       backgroundImage: {
         'contact': "url('/images/glow3.png')",

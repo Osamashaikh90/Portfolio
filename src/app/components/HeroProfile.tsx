@@ -18,7 +18,7 @@ const HeroProfile = () => {
         
  <Image
                             className='hidden mobile:block rounded-[50%]'
-        src="/images/Osama.jpeg"
+        src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/uls26z6z64kqaxccvnlh.jpg"
         width={540}
         height={540}
         alt="profile" />
