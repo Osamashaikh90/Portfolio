@@ -167,8 +167,8 @@ background-color: #b07219;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: rgb(63, 249, 220);
-  background: linear-gradient(0deg, rgba(63, 249, 220, 0.1) 33%, rgba(63, 249, 220, 1) 100%);
+  background: #e6edf3;
+  background: linear-gradient(0deg, rgba(232, 249, 247, 0.1) 33%, #e6edf3 100%);
   animation: spin .8s linear 0s infinite;
 }
 .circle-core {

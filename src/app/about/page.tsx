@@ -21,7 +21,7 @@ const [activeTab,setActiveTab] = useState<'Qualification' | 'Work Experience'>('
       <div className='w-full  flex flex-wrap items-center justify-center  gap-5 mobile:gap-24 p-5'>
         <div className="font-[Valencia] tracking-wide text-9xl bg-gradient-to-b from-[#ff5f9e] to-[#9cf5fd] text-transparent bg-clip-text w-64">Osama</div>
         <div className=''><Image className='mobile:hidden mt-[-20px] mobile:mt-0 rounded-full grayscale hover:grayscale-0'
-                    src="/images/osm4.jpg"
+                     src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745242/Portfolio/images/qamrx9ryxkm7mol5gbdv.jpg"
                     width={140}
                     height={140}
         alt="profile" />
