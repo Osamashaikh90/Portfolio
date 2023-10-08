@@ -187,3 +187,7 @@ background-color: #b07219;
     transform: rotate(359deg);
   }
 }
+
+img{
+user-select: none;
+}

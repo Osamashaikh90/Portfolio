@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="top flex items-center justify-between my-6 mx-4 font-mono text-sm"><span>Osama shaikh<span className='text-[#7d8590]'>/</span>README<span className='text-[#7d8590]'>.md</span> </span><span className='text-lg text-[#7d8590] hover:text-blue-700 cursor-pointer ' data-tooltip-id="edit"><GoPencil /></span>
       </div>
         <div className='flex justify-center flex-col relative h-[50vh] px-3'>
-          <div className="hidden mobile:block bg text-9xl font-background leading-snug  text-[#383a3d46] absolute z-[-1] tracking-wide">
+          <div className="hidden mobile:block bg text-9xl font-background leading-snug select-none  text-[#383a3d46] absolute z-[-1] tracking-wide">
              <h1>I BUILD</h1>
           <h1>WEBSITES</h1>
           </div>

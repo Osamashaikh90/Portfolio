@@ -24,7 +24,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, closeSidebar }) => {
       <div className="logo left text-lg mt-[15px] ml-4 flex gap-[18px] justify-between items-center">
                        <Link href="/"> <Image
                             className='rounded-full '
-                            src="/images/OSlogo.jpg"
+                            src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/tqvyqes2x6pkcdvopgt9.jpg"
                             width={35}
                             height={35}
           alt="Github logo" /></Link>
@@ -57,6 +57,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, closeSidebar }) => {
              <Link className='\' href=""><li className='flex gap-2 items-center  hover:bg-[#30363D] hover:rounded-lg p-2'><span className='text-lg text-[#7d8590] font-semibold'><GoCommentDiscussion className="font-bold"/></span><span className=' text-[#e6edf3] text-sm flex items-center justify-between gap-36'>Discussion<span className='border  rounded-xl text-xs font-semibold px-[6px] py-[2px] bg-[#0D1016] text-[#57A6FE] border-[#266EDD]'>Beta</span></span></li></Link>
          </ul>
          <h3 className='font-sign p-2 text-[#7d8590]'>© {year} <span className='font-sign text-[#e6edf3]'>Osama Shaikh</span></h3>
+         <h3 className='px-2 text-[#7d8590] text-lg'>® <span className='pl-1 text-[#e6edf3] text-sm'>All rights reserved</span></h3>
 </div>
 
 

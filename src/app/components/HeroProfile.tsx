@@ -10,13 +10,13 @@ const HeroProfile = () => {
       <div className='col-span-1 mobile:col-start-1 mobile:col-end-3'>
         <div className='flex items-center gap-5 mobile:block'>
         <div className='profile mt-11 mb-2 relative'> <Image
-                            className='mobile:hidden rounded-[50%]'
+                            className='mobile:hidden select-none rounded-[50%]'
          src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/uls26z6z64kqaxccvnlh.jpg"width={100}
         height={100}
         alt="profile" />
         
  <Image
-                            className='hidden mobile:block rounded-[50%]'
+                            className='hidden mobile:block select-none rounded-[50%]'
          src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/uls26z6z64kqaxccvnlh.jpg"
         width={540}
         height={540}

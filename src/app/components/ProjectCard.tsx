@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <div className=' flex flex-col items-center mobile:items-end  justify-center order-1 mobile:order-2'>
             <div className="relative group">
       <Image
-                            className=" object-cover"
+                            className="select-none object-cover"
                             src={project.image}
                             width={260}
                             height={260}
