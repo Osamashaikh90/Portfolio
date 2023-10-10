@@ -1,19 +1,20 @@
 "use client";
-import React, { useEffect } from 'react';
+import React, { useRef,useEffect } from 'react';
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { IconsTypes, iconsData, tools } from "../utils/icons"
 import ContactForm from '../components/ContactForm';
 import SocialLinks from '../components/SocialLinks';
 import GoToTop from '../components/GoToTop';
 
-const Skills = () => {
-  //  useEffect(() => {
-  //   // Scroll to the section with the matching ID when the page loads
-  //   const section = document.querySelector('#contactId');
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // }, []);
+const Skills:React.FC = () => {
+  const contactFormRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (window.scrollToContact) {
+      contactFormRef.current?.scrollIntoView({ behavior: 'smooth' });
+      window.scrollToContact = false;
+    }
+  }, []);
   return (
     <div className='text-white mx-4 mobile:mx-32 mb-5  grid gap-5 mobile:gap-10 grid-cols-2 mobile:grid-cols-6 '>
       <div className='flex flex-col items-center justify-center pb-1 col-span-2 mobile:col-span-6'><h2 className='text-lg items-center font-headings tracking-wide py-3'> Languages & Framworks 💻</h2>
@@ -45,7 +46,7 @@ const Skills = () => {
         </>))}
  <div className='flex flex-col items-center justify-center  pb-1 col-span-2 mobile:col-span-6'><h2 className='text-lg items-center tracking-wide py-3 font-headings'>Take a Coffee & Chat with ME 🤓 </h2>
         <div className='w-[100%] h-[1px] bg-[#2b2e33] '></div></div>
-      <div id='contactId' className='border col-span-2 mobile:col-span-6 border-[#3d3e41] rounded '>
+      <div ref={contactFormRef} className='border col-span-2 mobile:col-span-6 border-[#3d3e41] rounded '>
         <ContactForm />
       </div>
       <SocialLinks />

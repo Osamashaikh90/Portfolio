@@ -2,13 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import { Tooltip as ReactTooltip } from "react-tooltip";
-import {useRouter} from "next/navigation"
 
 const HeroProfile = () => {
-  const router = useRouter();
-const handleClick =()=>{
-  router.push("/skills#ContactId",{ scroll: true })
-}
+ const handleHireButtonClick = () => {
+    window.scrollToContact = true;
+  };
     let date = new Date();
   let year = date.getFullYear();
   return (
@@ -34,7 +32,7 @@ const handleClick =()=>{
         <div className='text-[#e6edf3] mt-3'> Web Developer | Transforming Ideas into Code🧑‍💻</div>
         <div className='flex items-center justify-between gap-4 mt-5'>
           {/* <button className='border border-[#2b2e33] rounded-md bg-[#383a3d59] py-[6px] w-full text-[#e6edf3] font-medium hover:border-[#6c717b] hover:bg-[#54575b62]'>Hire me</button> */}
-                   <button onClick={handleClick} className='border border-[#383a3d2d] rounded-md bg-[#383a3d59] py-[6px] w-full text-[#e6edf3] font-medium hover:border hover:border-[#6c717b] hover:bg-[#0D1117]'>Hire me</button>
+                   <button  className='border border-[#383a3d2d] rounded-md bg-[#383a3d59] py-[6px] w-full text-[#e6edf3] font-medium hover:border hover:border-[#6c717b] hover:bg-[#0D1117]' onClick={handleHireButtonClick}><Link href="/skills">Hire me</Link></button>
         {/* <button className='border border-[#2b2e33] rounded-md bg-[#383a3d59] py-[6px] w-full text-[#e6edf3] font-medium hover:border-[#6c717b] hover:bg-[#54575b62]'>Resume</button> */}
         <button className='border  rounded-md  py-[6px] w-full text-[#e6edf3] font-medium border-[#6c717b] hover:bg-[#54575b62] hover:border-0'><a href="https://drive.google.com/file/d/1st2YyygA11pe3gBRKn2qwhKGR6hru2ED/view?usp=sharing">Resume</a></button>
         </div>
