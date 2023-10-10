@@ -1,7 +1,8 @@
-declare global {
-    interface Window {
-       scrollToContact:any;
-    }
-}
 
-let scrollToContact = window.scrollToContact; 
+export {};
+
+declare global {
+  interface Window {
+    scrollToContact: any;
+  }
+}
