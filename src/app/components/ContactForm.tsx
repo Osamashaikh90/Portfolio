@@ -38,8 +38,8 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className='border bg-[#383a3d59] text-[#e6edf3] font-medium border-[#6c717b] row-span-2 rounded-xl w-full mobile:w-16 py-2 mobile:flex-none flex items-center justify-center mobile:pt-12 hover:bg-inherit'>
-          <button type='submit' className='mobile:rotate-90'>
+        <div className='border hover:bg-[#383a3d59] text-[#e6edf3] font-medium border-[#6c717b] row-span-2 rounded-xl w-full mobile:w-16 py-2 mobile:flex-none flex items-center justify-center  bg-inherit'>
+          <button type='submit' className='mobile:rotate-90 '>
             Submit
           </button>
         </div>
