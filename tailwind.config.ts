@@ -27,9 +27,9 @@ const config: Config = {
       },
       screens: {
       xxsm: '350px',
-      xsm: '425px',
-      mobile: '426px',
-      sm: '640px',
+      xsm: '375px',
+      mobile: '376px',
+      sm: '425px',
       tablet: '640px',
       md: '768px',
       lg: '1024px',

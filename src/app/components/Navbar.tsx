@@ -70,7 +70,7 @@ const Navbar = () => {
                 </div>
                 {/* ----------------------------------2nd nav------------------------------------------------------------ */}
                 <div className='p-2 flex justify-between items-center w-full relative'>
-                    <ul className='flex gap-5 justify-between mx-4 '>
+                    <ul className='flex gap-3 mobile:gap-5 justify-between mx-4 '>
                         <Link href="/"><li className={`flex gap-2 items-center hover:bg-[#21262d8f] active:bg-[#21262d8f]  hover:rounded-md p-1 relative `}><span className={`text-lg text-[#7d8590] font-semibold ${pathname === '/' ? 'after:content-[""] after:absolute after:h-[2px] after:w-full after:bg-[#F78166] after:left-0 after:top-full after:rounded-lg after:block' : ''}`}><GoBook className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Overview</span></li></Link>
                         <Link href="/projects"><li className={`flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-md p-1 relative`}><span className={`text-lg text-[#7d8590] font-semibold ${pathname === '/projects' ? 'after:content-[""] after:absolute after:h-[2px] after:w-full after:bg-[#F78166] after:left-0 after:top-full after:rounded-lg after:block' : ''}`}><GoRepo className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Projects</span> <span className=' rounded-xl px-2 py-[1px] font-sans text-[#e6edf3] bg-[#30363d] text-xs font-bold'><ProjectCounter /></span></li></Link>
                     <Link className='\' href="/skills"><li className='flex gap-2 items-center  hover:bg-[#21262d8f] hover:rounded-md p-1 relative'><span className={`text-lg text-[#7d8590] font-semibold ${pathname === '/skills' ? 'after:content-[""] after:absolute after:h-[2px] after:w-full after:bg-[#F78166] after:left-0 after:top-full after:rounded-lg after:block' : ''}`}><GoTable className="font-bold"/></span><span className=' text-[#e6edf3] text-sm'>Skills</span></li></Link>
@@ -87,7 +87,7 @@ const Navbar = () => {
                     
                     <div className='mobile:hidden text-xl   relative text-[#7d8590] mr-2 flex items-center  rounded-[3px]'>
                         <span onClick={showMenu}><BsThreeDots /></span>
-                        <div className={`remCard absolute  ml-[-400%]  flex flex-col text-[#e6edf3] bg-[#161B21] border-[#31363C] border shadow-md shadow-black text-sm z-10  mt-[106px] w-28 rounded ${isVisible? 'block' : 'hidden'}`}>
+                        <div className={`remCard absolute  ml-[-450%]  flex flex-col text-[#e6edf3] bg-[#161B21] border-[#31363C] border shadow-md shadow-black text-sm z-10  mt-[106px] w-28 rounded ${isVisible? 'block' : 'hidden'}`}>
                             <div className="pages flex justify-between items-center flex-col gap-2 py-3 px-5 ">
                                <span className='w-full'><Link href="/about" className=''> About</Link></span>
                                 <span className='w-full'><Link href="https://dev-diaries-kappa.vercel.app/" className=''>Blogs</Link></span>
