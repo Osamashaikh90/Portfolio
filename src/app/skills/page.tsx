@@ -16,8 +16,8 @@ const Skills:React.FC = () => {
     }
   }, []);
   return (
-    <div className='text-white mx-4 mobile:mx-32 mb-5  grid gap-5 mobile:gap-10 grid-cols-2 mobile:grid-cols-6 '>
-      <div className='flex flex-col items-center justify-center pb-1 col-span-2 mobile:col-span-6'><h2 className='text-lg items-center font-headings tracking-wide py-3'> Languages & Framworks 💻</h2>
+    <div className='text-white mx-4 sm:mx-32 mb-5  grid gap-5 sm:gap-10 grid-cols-2 sm:grid-cols-6 '>
+      <div className='flex flex-col items-center justify-center pb-1 col-span-2 sm:col-span-6'><h2 className='text-lg items-center font-headings tracking-wide py-3'> Languages & Framworks 💻</h2>
           <div className='w-[100%] h-[1px] bg-[#2b2e33] '></div></div>
       {iconsData.map((icon: IconsTypes) => (
         <>
@@ -32,7 +32,7 @@ const Skills:React.FC = () => {
 
           </div>
         </>))}
-      <div className='flex flex-col items-center justify-center  pb-1 col-span-2 mobile:col-span-6'><h2 className='text-lg items-center font-headings tracking-wide py-3'> Tools 🧑‍💻</h2>
+      <div className='flex flex-col items-center justify-center  pb-1 col-span-2 sm:col-span-6'><h2 className='text-lg items-center font-headings tracking-wide py-3'> Tools 🧑‍💻</h2>
           <div className='w-[100%] h-[1px] bg-[#2b2e33] '></div></div>
       {tools.map((icon: IconsTypes) => (
             <><ReactTooltip
@@ -44,9 +44,9 @@ const Skills:React.FC = () => {
         <img src={icon.src} alt="" className="w-20 mx-auto"/>
           </div>
         </>))}
- <div className='flex flex-col items-center justify-center  pb-1 col-span-2 mobile:col-span-6'><h2 className='text-lg items-center tracking-wide py-3 font-headings'>Take a Coffee & Chat with ME 🤓 </h2>
+ <div className='flex flex-col items-center justify-center  pb-1 col-span-2 sm:col-span-6'><h2 className='text-lg items-center tracking-wide py-3 font-headings'>Take a Coffee & Chat with ME 🤓 </h2>
         <div className='w-[100%] h-[1px] bg-[#2b2e33] '></div></div>
-      <div ref={contactFormRef} className='border col-span-2 mobile:col-span-6 border-[#3d3e41] rounded '>
+      <div ref={contactFormRef} className='border col-span-2 sm:col-span-6 border-[#3d3e41] rounded '>
         <ContactForm />
       </div>
       <SocialLinks />

@@ -24,8 +24,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className='w-[98%] my-5 mx-2 h-[1px] bg-[#2b2e33]'></div>
         {/* ------------------------------------------------------------------ */}
         <div className='py-[6px] mx-2 w-[98%] flex flex-col '> 
-          <div className="grid gap-5 grid-cols-1 mobile:grid-cols-3 ">
-            <div className='flex flex-col gap-y-2 col-span-1 mobile:col-span-2 order-2 mobile:order-1'>
+          <div className="grid gap-5 grid-cols-1 sm:grid-cols-3 ">
+            <div className='flex flex-col gap-y-2 col-span-1 sm:col-span-2 order-2 sm:order-1'>
               <span className='flex items-center gap-2'><a href={project.source_code}><h3 className='text-[#2f81f7] font-sans font-semibold text-xl cursor-pointer hover:underline'>{ project.name}</h3></a>
                 <span className='border border-[#2b2e33] rounded-2xl px-2 py-[1px] font-sans text-[#7d8590] text-xs font-semibold'>{ project.visibility}</span>
               </span>
@@ -47,7 +47,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <span className={`h-3 w-3  rounded-full ${project.language}`}></span>{project.language}
               </div>
               </div>
-            <div className=' flex flex-col items-center mobile:items-end  justify-center order-1 mobile:order-2'>
+            <div className=' flex flex-col items-center sm:items-end  justify-center order-1 sm:order-2'>
             <div className="relative group">
       <Image
                             className="select-none object-cover"
