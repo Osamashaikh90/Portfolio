@@ -10,23 +10,23 @@ const ContactForm = () => {
       <form
         action='https://formspree.io/f/xnqkonnz'
         method='post'
-        className='relative z-10 flex flex-wrap sm:flex-nowrap gap-5 sm:h-40 px-3'
+        className='relative z-10 flex flex-wrap midp:flex-nowrap gap-5 midp:h-40 px-3'
       >
         <div className='flex flex-col gap-5 w-full'>
-          <div className='flex flex-col gap-5 sm:flex-row sm:gap-[4%]'>
+          <div className='flex flex-col gap-5 midp:flex-row midp:gap-[4%]'>
             <input
               name='name'
               id='name'
               type='text'
               placeholder='Enter your Name'
-              className='p-3 bg-inherit w-full sm:w-[48%] rounded-xl border border-[#7d8590]'
+              className='p-3 bg-inherit w-full midp:w-[48%] rounded-xl border border-[#7d8590]'
             />
             <input
               name='Email'
               id='email'
               type='email'
               placeholder='Enter your E-mail'
-              className='bg-inherit w-full sm:w-[48%] p-3 rounded-xl border border-[#7d8590]'
+              className='bg-inherit w-full midp:w-[48%] p-3 rounded-xl border border-[#7d8590]'
             />
           </div>
 
@@ -38,8 +38,8 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className='border hover:bg-[#383a3d59] text-[#e6edf3] font-medium border-[#6c717b] row-span-2 rounded-xl w-full sm:w-16 py-2 sm:flex-none flex items-center justify-center  bg-inherit'>
-          <button type='submit' className='sm:rotate-90 '>
+        <div className='border hover:bg-[#383a3d59] text-[#e6edf3] font-medium border-[#6c717b] row-span-2 rounded-xl w-full midp:w-16 py-2 midp:flex-none flex items-center justify-center  bg-inherit'>
+          <button type='submit' className='midp:rotate-90 '>
             Submit
           </button>
         </div>

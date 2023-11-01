@@ -20,7 +20,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, closeSidebar }) => {
      {isOpen && (
                 <div className="fixed inset-0 bg-[#b1bac4] bg-opacity-25 z-10"></div>
             )}
-    <div className={`flex flex-col gap-5 border-[1px]  border-[#21262D] z-10  sm:w-[22%] shadow-black shadow-xl rounded-tr-2xl rounded-br-2xl fixed top-0 left-0 h-screen bg-[#161b22] ${isOpen ? 'translate-x-0 duration-300' : '-translate-x-full duration-150'}`}>
+    <div className={`flex flex-col gap-5 border-[1px]  border-[#21262D] z-10  lg:w-[22%] shadow-black shadow-xl rounded-tr-2xl rounded-br-2xl fixed top-0 left-0 h-screen bg-[#161b22] ${isOpen ? 'translate-x-0 duration-300' : '-translate-x-full duration-150'}`}>
       <div className="logo left text-lg mt-[15px] ml-4 flex gap-[18px] justify-between items-center">
                        <Link href="/"> <Image
                             className='rounded-full '
