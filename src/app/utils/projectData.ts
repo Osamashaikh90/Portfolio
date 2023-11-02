@@ -17,7 +17,7 @@ export const projectData: Array<ProjectDataTypes> = [
 "description": "A dynamic E-Commerce platform designed to provide users with an efficient and enjoyable online shopping experience.",
 "tags": ["reactjs", "nodejs", "mongodb", "styled-components", "expressjs","react-ecommerce"],
 "source_code": "https://github.com/Osamashaikh90/QuickClick",
-"live_link": "quick-click.vercel.app",
+"live_link": "https://quick-click.vercel.app",
 "language":"JavaScript",
 "visibility":"Public"
 
