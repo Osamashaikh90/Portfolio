@@ -6,6 +6,7 @@ const Writer:any = () => {
       options={{
         strings: [
           "Full Stack Web Developer",
+          "ReactJs Developer",
           "NextJs Developer",
           "MERN Stack Developer",
         ],

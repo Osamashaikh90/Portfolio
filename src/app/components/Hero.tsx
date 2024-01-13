@@ -16,7 +16,7 @@ const Hero = () => {
         <div className='flex justify-center flex-col relative h-[50vh] px-3'>
           <div className="hidden md:block  bg md:text-7xl lg:text-8xl xl:text-9xl  font-background md:leading-normal lg:leading-snug xl:leading-[1.35] select-none  text-[#383a3d46] absolute z-[-1] tracking-wide">
              <h1>I BUILD</h1>
-          <h1>WEBSITES</h1>
+          <h1>WEB APPS</h1>
           </div>
           <div className="foreground flex justify-start items-center  z-[2] text-[#ffc0b5]">
             <div className="content px-3 pt-10 flex flex-col gap-y-5 ">
