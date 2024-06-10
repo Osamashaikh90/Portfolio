@@ -5,7 +5,6 @@ import { IconsTypes, iconsData, tools } from "../utils/icons"
 import ContactForm from '../components/ContactForm';
 import SocialLinks from '../components/SocialLinks';
 import GoToTop from '../components/GoToTop';
-import Tilt from "react-parallax-tilt";
 
 const Skills: React.FC = () => {
   const contactFormRef = useRef<HTMLDivElement | null>(null);

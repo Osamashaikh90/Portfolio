@@ -28,7 +28,7 @@ const GoToTop = () => {
      <>
         <div className="flex justify-center items-center relative ">
           {isVisible && (
-            <div className="hover:animate-bounce  w-[2.5rem] h-[2.5rem]  z-[999] rounded-[50%] right-8 bottom-6 top-btn  text-[#555a62] bg-[#e6edf3] fixed flex justify-center items-center cursor-pointer shadow-xl shadow-[#5f6e8a]" onClick={goToBtn}>
+            <div className="hover:animate-bounce  w-[2.5rem] h-[2.5rem]  z-[999] rounded-[50%] right-8 bottom-6 top-btn  text-[#555a62] bg-[#e6edf3] fixed flex justify-center items-center cursor-pointer shadow-md shadow-[#5f6e8a]" onClick={goToBtn}>
               <GoChevronUp className="top-btn--icon h-5 " />
             </div>
           )}
