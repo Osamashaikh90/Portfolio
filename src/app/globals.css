@@ -188,6 +188,99 @@ background-color: #b07219;
   }
 }
 
+/* for project count loader */
+.pc-spinner-box {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.pc-circle-border {
+  width: 14px;
+  height: 14px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #e6edf3;
+  background: linear-gradient(0deg, rgba(232, 249, 247, 0.1) 33%, #e6edf3 100%);
+  animation: spin .8s linear 0s infinite;
+}
+
+.pc-circle-core {
+  width: 100%;
+  height: 100%;
+  background-color: #0D1117;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 img{
 user-select: none;
 }
+.card{
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+ .card::before {
+  content: '';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(var(--clr),transparent,transparent);
+  width: 700px;
+  height: 700px;
+  opacity: 0;
+  transition: 0.4s,top 0s, left 0s;
+}
+ .card:hover::before{
+  opacity: 0.4;
+}
+ .card::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius:18px;
+  background: rgba(119, 119, 119, 0);
+}
+
+.triangle{
+  border-top: solid 45px rgba(255, 255, 255, 0.704);
+  border-left: solid 45px rgba(255, 255, 255, 0.723);
+  border-right: solid 45px transparent;
+  border-bottom: solid 45px transparent;
+}
+
+.blog::after{
+  content:'';
+  position: absolute;
+  top: -24px;
+    left: 20px;
+    display: inline-block;
+    width: 2.85em;
+    height: 8em;
+    transform: translate(0em, 0.45em) rotate(25.2deg);
+  background: linear-gradient(to right bottom, transparent 50%, #9fd0db 0, #d2f1fb 27px, #012a32);
+  /* box-shadow: 0 10px 4px -4px #000; */
+  box-shadow: 6px 12px 6px -5px #000000;
+}
+
+.boat{
+  clip-path: polygon(0 -1px, 100% -1px, calc(100% - 10px) 100%, 10px 100%);
+}
+
