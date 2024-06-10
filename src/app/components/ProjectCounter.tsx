@@ -1,6 +1,7 @@
 // components/ProjectCounter.tsx
 import { useEffect, useState } from 'react';
 import { projectData } from '../utils/projectData';
+import Loading from './Loading';
 
 function ProjectCounter() {
   const [projectCount, setProjectCount] = useState<number | null>(null);
@@ -11,7 +12,7 @@ function ProjectCounter() {
   // console.log(projectCount);
   return (
     <div>
-      {projectCount !== null ? projectCount : 'Loading...'}
+      {projectCount !== null ? projectCount : <Loading />}
     </div>
   );
 }
