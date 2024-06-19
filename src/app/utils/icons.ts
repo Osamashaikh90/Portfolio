@@ -100,16 +100,16 @@ export const iconsData: Array<IconsTypes> = [
     "content":"MongoDb"
   },
  
+//  {
+//     "id": 12,
+//     "src": "https://res.cloudinary.com/dwohsn29d/image/upload/v1696745242/Portfolio/images/s15x18ibpjjp3ja9aqcc.png",
+//      "library": "cg",
+//     "style": "shadow-sky-500",
+//     "bg":"rgba(14, 165, 213) ",
+//     "content":"PostgreSql"
+//    },
  {
     "id": 12,
-    "src": "https://res.cloudinary.com/dwohsn29d/image/upload/v1696745242/Portfolio/images/s15x18ibpjjp3ja9aqcc.png",
-     "library": "cg",
-    "style": "shadow-sky-500",
-    "bg":"rgba(14, 165, 213) ",
-    "content":"PostgreSql"
-   },
- {
-    "id": 13,
     "src": "https://res.cloudinary.com/dwohsn29d/image/upload/v1696745238/Portfolio/images/gl3r9byb6p9ow8rxug7d.webp",
      "library": "cg",
     "style": "shadow-purple-500 pt-4",
@@ -117,7 +117,7 @@ export const iconsData: Array<IconsTypes> = [
     "content":"Bootstrap"
    },
  {
-    "id": 14,
+    "id": 13,
     "src": "https://res.cloudinary.com/dwohsn29d/image/upload/v1696745240/Portfolio/images/vvinvhdfitchcqblwohd.png",
      "library": "cg",
     "style": "shadow-sky-500 pt-4",
@@ -125,7 +125,7 @@ export const iconsData: Array<IconsTypes> = [
     "content":"MySql"
    },
   {
-    "id": 15,
+    "id": 14,
     "src": "/styled.png",
      "library": "cg",
      "style": "shadow-pink-400 ",
@@ -133,7 +133,7 @@ export const iconsData: Array<IconsTypes> = [
     "content":"Styled-Component"
   },
   {
-    "id": 16,
+    "id": 15,
     "src": "https://res.cloudinary.com/dwohsn29d/image/upload/v1696745237/Portfolio/images/axt704a3aml5iwapu43b.png",
     "library": "cg",
      "style": "shadow-red-500 from-blue-500 to-red-500",
@@ -142,7 +142,7 @@ export const iconsData: Array<IconsTypes> = [
    
   },
   {
-    "id": 17,
+    "id": 16,
     "src": "/md.png",
     "library": "cg",
      "style": "shadow-gray-700 pt-5 ",
@@ -151,7 +151,7 @@ export const iconsData: Array<IconsTypes> = [
   },
   
   {
-    "id": 18,
+    "id": 17,
     "src": "/redux-original.svg",
     "library": "cg",
     "style": "shadow-purple-400 ",
@@ -159,7 +159,7 @@ export const iconsData: Array<IconsTypes> = [
    "content":"Sass"
   },
   {
-    "id": 19,
+    "id": 18,
     "src": "/sass.svg",
     "library": "cg",
     "style": "shadow-pink-400 pt-4",
