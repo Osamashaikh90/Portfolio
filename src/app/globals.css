@@ -284,3 +284,41 @@ user-select: none;
   clip-path: polygon(0 -1px, 100% -1px, calc(100% - 10px) 100%, 10px 100%);
 }
 
+
+/* .home-font:hover{
+color:#fff;
+text-shadow: 0 0 10px #03bcf4,
+0 0 20px #03bcf4,
+0 0 40px #03bcf4,
+0 0 80px #03bcf4,
+0 0 160px #03bcf4; 
+} */
+
+
+.shine {
+	/* background: linear-gradient(to right, #222, #fff 50%, #222) 0 0 no-repeat; */
+  background: linear-gradient(to right, #22222264, #ffffff64 50%, #22222276) 0 0 no-repeat;
+  /* background: linear-gradient(to right, #383a3d, #d3d3d3 50%, #383a3d) 0 0 no-repeat; */
+	background-size: 150px;
+	-webkit-background-clip: text;
+	background-clip: text;
+	animation-name: shine;
+	animation-duration: 5s; 
+	animation-iteration-count: infinite;
+	
+}
+
+@keyframes shine {
+	0%, 10% {
+		background-position: -1000px 0;
+	}
+	20% {
+		background-position: 0 0;
+	}
+	90% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 1000px 0;
+	}
+}
