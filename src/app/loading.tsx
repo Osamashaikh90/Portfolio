@@ -1,17 +1,21 @@
+"use client"
 import React from 'react'
 
-const loading = () => {
+const Loading: React.FC = () => {
+
+
   return (
-       <main className='flex items-center justify-center '>
-          <div className='m-40'>
-              <div className="spinner-box">
-  <div className="circle-border">
-    <div className="circle-core"></div>
-  </div>  
-</div>
-              </div>
+    <main className='flex items-center justify-center '>
+      <div className=''>
+        {/* <div className="pc-spinner-box"> */}
+          <div className="pc-circle-border">
+            <div className="pc-circle-core"></div>
+          </div>
+        {/* </div> */}
+      </div>
     </main>
-  )
+  );
+
 }
 
-export default loading
+export default Loading

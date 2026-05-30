@@ -42,7 +42,7 @@ const Navbar = () => {
                             src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/tqvyqes2x6pkcdvopgt9.jpg"
                             width={35}
                             height={35}
-                            alt="Github logo" /></Link>
+                            alt="Osama Shaikh portfolio home" /></Link>
                         <Link href="/"> <span className='text-sm p-[6px] font-semibold text-[#e6edf3] tracking-wide font-sans hover:bg-[#21262d8f] hover:rounded-md '>Osamashaikh90</span>
                         </Link>
                     </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
                                 src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/ctb3fojvz49l6ooatfgf.png"
                                 width={35}
                                 height={35}
-                                alt="profile" /></Link>
+                                alt="Osama Shaikh profile photo" /></Link>
                         </span>
                     </div>
                 </div>

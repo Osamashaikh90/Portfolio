@@ -37,7 +37,7 @@ const Skills: React.FC = () => {
           />
           <div key={icon.id} onMouseMove={handleMouseMove} data-tooltip-id={icon.content} className={`card cursor-pointer shadow-md hover:scale-105 duration-500 py-3 rounded-lg  ${icon.style}`}
             style={{ '--clr': icon.bg } as React.CSSProperties}>
-            <img src={icon.src} alt="" className="w-20 mx-auto" />
+            <img src={icon.src} alt={`${icon.content} skill icon`} className="w-20 mx-auto" loading="lazy" decoding="async" />
 
           </div>
         </>))}
@@ -52,7 +52,7 @@ const Skills: React.FC = () => {
           content={icon.content} />
           <div data-tooltip-id={icon.content} onMouseMove={handleMouseMove} key={icon.id} className={`card cursor-pointer shadow-md hover:scale-105 duration-500 py-3 rounded-lg ${icon.style}`}
             style={{ '--clr': icon.bg } as React.CSSProperties}>
-            <img src={icon.src} alt="" className="w-20 mx-auto" />
+            <img src={icon.src} alt={`${icon.content} skill icon`} className="w-20 mx-auto" loading="lazy" decoding="async" />
           </div>
         </>))}
       <div className='flex flex-col items-center justify-center  pb-1 col-span-2 sm:col-span-3 midp:col-span-4 md:col-span-5 lg:col-span-6'><h2 className='text-lg items-center tracking-wide py-3 font-headings'>Take a Coffee & Chat with ME 🤓 </h2>

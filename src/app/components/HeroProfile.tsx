@@ -17,14 +17,18 @@ const HeroProfile = () => {
                             className='md:hidden select-none rounded-[50%]'
          src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/uls26z6z64kqaxccvnlh.jpg"width={100}
         height={100}
-        alt="profile" />
+        alt="Osama Shaikh — Full Stack Developer portrait"
+        priority
+      />
         
  <Image
                             className='hidden md:block select-none rounded-[50%]'
          src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/uls26z6z64kqaxccvnlh.jpg"
         width={540}
         height={540}
-        alt="profile" />
+        alt="Osama Shaikh — Full Stack Developer portrait"
+        priority
+      />
         <div data-tooltip-id="my-tooltip-1" className="hidden md:block cursor-pointer emoji absolute right-0 bottom-9 rounded-full bg-[#010409] border border-[#21262D] w-10 h-10 p-[10px] text-sm">😄</div>
       </div>
         <div className='mt-5 text-2xl md:text-[26px] font-bold md:font-semibold font-sans text-[#e6edf3]'>Osama Shaikh<span className='text-[#7d8590] font-normal text-xl'> . </span><span className='text-[#7d8590] font-normal text-lg md:text-xl'>he/him</span></div></div>

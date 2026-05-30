@@ -15,21 +15,21 @@ const Hero = () => {
         <div className="top flex items-center justify-between my-6 mx-4 font-mono text-sm"><span>Osama shaikh<span className='text-[#7d8590]'>/</span>README<span className='text-[#7d8590]'>.md</span> </span><span className='text-lg text-[#7d8590] hover:text-blue-700 cursor-pointer ' data-tooltip-id="edit"><GoPencil /></span>
         </div>
         <div className='flex justify-center flex-col relative h-[50vh] px-3'>
-          <div className="shine hidden md:block  bg md:text-7xl lg:text-8xl xl:text-9xl  font-background md:leading-normal lg:leading-snug xl:leading-[1.35] select-none  text-[#383a3d46] absolute z-[-1] tracking-wide">
-            <h1>I BUILD</h1>
-            <h1>WEB APPS</h1>
+          <div className="shine hidden md:block  bg md:text-7xl lg:text-8xl xl:text-9xl  font-background md:leading-normal lg:leading-snug xl:leading-[1.35] select-none  text-[#383a3d46] absolute z-[-1] tracking-wide" aria-hidden="true">
+            <p className="font-background">I BUILD</p>
+            <p className="font-background">WEB APPS</p>
           </div>
           <div className="foreground flex justify-start items-center  z-[2] text-[#ffc0b5]">
             <div className="content px-3 pt-10 flex flex-col gap-y-5 ">
-              <h1 className='name text-[#e6edf3] md:text-3xl xl:text-4xl font-medium mb-2'><span className='text-[#7d8590]'>Hi</span> there!<span className="wave" role="img" aria-labelledby="wave">
+              <p className='name text-[#e6edf3] md:text-3xl xl:text-4xl font-medium mb-2'><span className='text-[#7d8590]'>Hi</span> there!<span className="wave" role="img" aria-label="Waving hand">
                 👋🏻
-              </span></h1>
+              </span></p>
               <h1 className='name text-[#e6edf3] md:text-4xl xl:text-5xl font-medium mb-2 uppercase font-sans '><span className='text-[#ff5f9e] leading-normal md:leading-none '>I am  </span>Osama Shaikh</h1>
-              <h6 className='bio text-[#e6edf3] text-2xl font-light mb-9 flex gap-4'>A <span className='font-typewriter'>
+              <p className='bio text-[#e6edf3] text-2xl font-light mb-9 flex gap-4'>A <span className='font-typewriter'>
                 <TextEffect>
                 Full Stack Web Developer, ReactJs Developer, NextJs Developer, MERN Stack Developer, Software Developer
                 </TextEffect></span>
-              </h6>
+              </p>
             </div>
 
           </div>
@@ -40,11 +40,11 @@ const Hero = () => {
           <div className='flex gap-5 md:gap-40 items-center flex-wrap justify-center md:justify-between'>
 
             <p className='flex items-center  gap-2'>
-              <a href="https://www.linkedin.com/in/osama-shaikh-8641a5211/"><img src="https://img.shields.io/badge/LinkedIn-000080?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-              <a href="https://www.instagram.com/osamashaikh_786/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-              <a href="https://dev.to/osamashaikh90"><img src="https://img.shields.io/badge/dev-%23000000.svg?style=for-the-badge&logo=dev&logoColor=white" /></a>
-              <a href="https://twitter.com/Osamash03705044"><img src="https://img.shields.io/badge/Twitter-0099ff?style=for-the-badge&logo=twitter&logoColor=white" /></a>
-              <a href="mailto:shaikhosama499@gmail.com"><img src="https://img.shields.io/badge/mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+              <a href="https://www.linkedin.com/in/osama-shaikh-8641a5211/" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-000080?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" width={160} height={28} loading="lazy" /></a>
+              <a href="https://www.instagram.com/osamashaikh_786/" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Follow on Instagram" width={160} height={28} loading="lazy" /></a>
+              <a href="https://dev.to/osamashaikh90" rel="noopener noreferrer"><img src="https://img.shields.io/badge/dev-%23000000.svg?style=for-the-badge&logo=dev&logoColor=white" alt="Read on Dev.to" width={120} height={28} loading="lazy" /></a>
+              <a href="https://twitter.com/Osamash03705044" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Twitter-0099ff?style=for-the-badge&logo=twitter&logoColor=white" alt="Follow on Twitter" width={140} height={28} loading="lazy" /></a>
+              <a href="mailto:shaikhosama499@gmail.com"><img src="https://img.shields.io/badge/mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Send email" width={120} height={28} loading="lazy" /></a>
             </p>
             <h3 className='font-sign md:hidden'>© {year} <span className='font-sign'>Osama Shaikh</span></h3>
           </div>

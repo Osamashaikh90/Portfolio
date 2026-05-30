@@ -1,13 +1,12 @@
-"use client"
-import {useRef,useEffect} from "react";
-import Hero from "./components/Hero";
-import dynamic from "next/dynamic";
+import PageSchemas from "@/components/seo/PageSchemas";
+import { pageSeo } from "@/lib/seo/seo-config";
+import HomePage from "./HomePage";
+
 export default function Home() {
-  const DynamicTitleComponent = dynamic(()=>import("./components/DynamicTitleComponent"),{ssr:false});
   return (
-    <main >
-      <Hero />
-      <DynamicTitleComponent />
-    </main>
-  )
+    <>
+      <PageSchemas page={pageSeo.home} />
+      <HomePage />
+    </>
+  );
 }

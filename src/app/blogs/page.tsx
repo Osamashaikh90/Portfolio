@@ -42,7 +42,7 @@ const Blogs = () => {
         <div className="text-white  mx-4 md:mx-32 mb-2 grid  grid-cols-2 sm:grid-cols-3 midp:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
           {/* Section Heading */}
           <div className="flex flex-col gap-2 xxsm:items-center sm:items-start justify-center pt-10 pb-2 col-span-2 sm:col-span-3 midp:col-span-4 md:col-span-5 lg:col-span-6">
-            <h2 className="text-5xl items-center font-headings font-bold tracking-wide py-3">Blogs📜 </h2>
+            <h1 className="text-5xl items-center font-headings font-bold tracking-wide py-3">Blogs📜 </h1>
           </div>
           <div className=' flex flex-col gap-8 col-span-2 sm:col-span-3 midp:col-span-4 md:col-span-5 lg:col-span-6'>
             {BlogData?.map((blog: BlogDataTypes) => {

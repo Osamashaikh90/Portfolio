@@ -24,12 +24,16 @@ const About = () => {
           src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745242/Portfolio/images/qamrx9ryxkm7mol5gbdv.jpg"
           width={140}
           height={140}
-          alt="profile" />
+          alt="Osama Shaikh profile on About page"
+          loading="lazy"
+        />
           <Image className='hidden md:block rounded-full grayscale hover:grayscale-0 transition-all duration-700'
             src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745242/Portfolio/images/qamrx9ryxkm7mol5gbdv.jpg"
             width={180}
             height={180}
-            alt="profile" /></div>
+            alt="Osama Shaikh profile on About page"
+            loading="lazy"
+          /></div>
         <div className="font-[Valencia] tracking-wide  text-9xl bg-gradient-to-b to-[#ff5f9e] from-[#9cf5fd] text-transparent bg-clip-text w-64">Shaikh</div>
       </div>
       <div className='my-5 grid grid-cols-1 md:grid-cols-2 gap-8 '>

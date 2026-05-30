@@ -55,7 +55,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 src={project.image}
                 width={260}
                 height={260}
-                alt="profile" />
+                alt={`${project.name} project preview`}
+                loading="lazy"
+              />
               <Link href={project.live_link} target='_blank'>        <div className="overlay absolute left-8 right-[30px] top-4 bottom-5  inset-0 opacity-0 transition-opacity duration-400 ease-in-out bg-[#0d1117] cursor-pointer group-hover:opacity-80 group-hover:rounded">
 
                 <div className="content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#e6edf3] font-lora text-center">

@@ -27,7 +27,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, closeSidebar }) => {
                             src="https://res.cloudinary.com/dwohsn29d/image/upload/v1696745241/Portfolio/images/tqvyqes2x6pkcdvopgt9.jpg"
                             width={35}
                             height={35}
-          alt="Github logo" /></Link>
+          alt="Osama Shaikh portfolio home" /></Link>
         <span className=' rounded-lg text-[#7d8590] font-bold hover:bg-[#30363D] hover:duration-300 text-xl cursor-pointer mr-[18px] mt-[2px] p-2'  onClick={closeSidebar}><GoX/></span>
       </div>
       <div className="pages mx-3 overflow-y-auto">
